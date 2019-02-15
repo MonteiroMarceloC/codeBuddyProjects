@@ -3,10 +3,18 @@
     <head>
         <title> codeBuddy's Projects </title>
         <link rel="icon" href="imgs/logo branca.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
             .logo {
                 height: 50px;
                 width: auto;
+                align-self: flex-start;
             }
             .intro{
                 color: #ffffff;
@@ -15,24 +23,42 @@
                 font-size: 36px;
                 text-align: center;
             }
+            @media screen and (max-width: 900px) {
+                .intro {
+                    font-size: 30px;
+                }
+                .nome {
+                    font-size: 24px;
+                }
+            }
+            @media screen and (max-width: 700px) {
+                .intro {
+                    font-size: 24px;
+                }
+                .nome {
+                    font-size: 18px;
+                }
+            }
             .nome{
                 color: #ffffff;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 24px;
+                font-size: 30px;
                 text-align: center;
             }
             .imagem{
-                width: 400px;
+                width: 300px;
                 height: auto;
-                transition: width 0.5s, height 0.5s;
+                transition-duration: 0.3s;
             }
             .imagem:hover {
-                width: 480px;
+                width: 360px;
                 height: auto;
             }
             .grid-container {
-                display: grid;
-                grid-template-columns: auto auto auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
             }
 
             .grid-item {
@@ -43,6 +69,8 @@
                 font-size: 30px;
                 text-align: center;
                 border-radius: 10px;
+             
+                
             }
         </style>
     </head>
@@ -65,22 +93,20 @@
                     <img class="imagem" src="imgs/baggio2.png" alt="Baby Ball" style="border-radius: 5px">
                     <p class="nome">Gabriel Baggio - BH</p>
                 </a>
-            </div>
-            <div class="grid-container">
-                    <a class="grid-item" href="https://scratch.mit.edu/projects/256062423/">
-                        <img class="imagem" src="imgs/miguel.png" alt="Pugg" style="border-radius: 5px">
-                        <p class="nome">Miguel Senna - BH</p>
-                    </a>
-    
-                    <a class="grid-item" href="https://scratch.mit.edu/projects/249290656/">
-                        <img class="imagem" src="imgs/bool.png" alt="Bool" style="border-radius: 5px">
-                        <p class="nome">Fulano Silva - SP</p>
-                    </a>
-    
-                    <a class="grid-item" href="https://scratch.mit.edu/projects/249303204/">
-                        <img class="imagem" src="imgs/var.png" alt="Room" style="border-radius: 5px">
-                        <p class="nome">Fulana Silva - SP</p>
-                    </a>
+                <a class="grid-item" href="https://scratch.mit.edu/projects/256062423/">
+                    <img class="imagem" src="imgs/miguel.png" alt="Pugg" style="border-radius: 5px">
+                    <p class="nome">Miguel Senna - BH</p>
+                </a>
+
+                <a class="grid-item" href="https://scratch.mit.edu/projects/249290656/">
+                    <img class="imagem" src="imgs/bool.png" alt="Bool" style="border-radius: 5px">
+                    <p class="nome">Fulano Silva - SP</p>
+                </a>
+
+                <a class="grid-item" href="https://scratch.mit.edu/projects/249303204/">
+                    <img class="imagem" src="imgs/var.png" alt="Room" style="border-radius: 5px">
+                    <p class="nome">Fulana Silva - SP</p>
+                </a>
                 </div>
         <div>
 
