@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> codeBuddy's Projects </title>
+    <link rel="icon" href="imgs/logo branca.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0;
+        }
+        
+        #cabecalho {
+            padding: 0 0 33px 0;
+            width: 100%;
+            height: 20%;
+            background-image: url('https://www.codebuddy.com.br/wp-content/themes/buddys/assets/images/faixa2.png');
+        }
+        
+        .linha {
+            width: 100%;
+            height: 3px;
+            background-color: rgba(80, 80, 80, 0.75);
+            ;
+        }
+        
+        .logo {
+            margin: 15px 0px;
+            height: 50px;
+            width: auto;
+            float: left;
+            position: absolute;
+        }
+        
+        .title {
+            color: #ffffff;
+            text-shadow: -1px -1px 3px rgba(200, 200, 200, 0.5), 1px -1px 3px rgba(200, 200, 200, 0.5), -1px 1px 3px rgba(200, 200, 200, 0.5), 1px 1px 3px rgba(200, 200, 200, 0.5);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            text-align: center;
+        }
+        
+        .intro {
+            margin: 0 20px;
+            padding: 0;
+            color: #e4e4e4;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(60, 60, 60, 0.5);
+        }
+        
+        @media screen and (max-width: 900px) {
+            .title {
+                font-size: 30px;
+            }
+            .intro {
+                font-size: 20px;
+            }
+            .logo {
+                height: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 700px) {
+            .title {
+                font-size: 24px;
+            }
+            .intro {
+                font-size: 18px;
+            }
+            .logo {
+                height: 25px;
+            }
+        }
+        
+        .imagem {
+            width: 80%;
+            height: auto;
+            margin: 15% 10% 5% 10%;
+            transition-duration: 0.3s;
+        }
+        
+        .imagem:hover {
+            width: 90%;
+            margin: 0%;
+        }
+        
+        .content {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.codebuddy.com.br/wp-content/uploads/2018/04/bg-blue.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto 100%;
+        }
+        
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin: 2% 4%;
+        }
+        
+        .grid-item {
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.0);
+            padding: 0px;
+            margin: 0px;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 10px;
+            transition-duration: 0.3s;
+            max-width: 400px;
+            min-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cabecalho">
+        <img class="logo" src="imgs/logo branca.png" alt="codeBuddy">
+        <p class="title">MURAL DE PROJETOS</p>
+        <p class="intro"> Os projetos abaixo foram desenvolvidos por alunas e alunos da codeBuddy.<br>Clique para conhecer e se inspirar!</p>
+    </div>
+
+
+    <div class='content'>
+        <div class="linha"></div>
+        <div class="grid-container">
+            <a class="grid-item" href="https://scratch.mit.edu/projects/256062423/">
+                <img class="imagem" src="imgs/miguel.png" alt="Pugg" style="border-radius: 12px">
+                <p class="intro">Miguel Senna - MG</p>
+            </a>
+            <a class="grid-item" href="https://scratch.mit.edu/projects/282581136/">
+                <img class="imagem" src="imgs/p1.png" alt="Mundos codeBuddy" style="border-radius: 12px">
+                <p class="intro">Lucas Alcides - RJ</p>
+            </a>
+            <a class="grid-item" href="https://scratch.mit.edu/projects/249303204/">
+                <img class="imagem" src="imgs/var.png" alt="Room" style="border-radius: 12px">
+                <p class="intro">Marcely Santos - SP</p>
+            </a>
+            <a class="grid-item" href="https://scratch.mit.edu/projects/215166380/">
+                <img class="imagem" src="imgs/baggio2.png" alt="Baby Ball" style="border-radius: 12px">
+                <p class="intro">Gabriel Baggio - MG</p>
+            </a>
+            <a class="grid-item" href="https://scratch.mit.edu/projects/249290656/">
+                <img class="imagem" src="imgs/bool.png" alt="Bool" style="border-radius: 12px">
+                <p class="intro">Cláudia Sanchez - RJ</p>
+            </a>
+            <a class="grid-item" href="https://scratch.mit.edu/projects/185895244/">
+                <img class="imagem" src="imgs/baggio.png" alt="Five Nights" style="border-radius: 12px">
+                <p class="intro">Gabriel Baggio - MG</p>
+            </a>
+
+        </div>
+        <p class="intro" style="text-align: right; margin: 60px 40px 25px 25px;">Mais projetos estão por vir...</p>
+
+        <footer id="colophon" class="site-footer" role="contentinfo" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row" style="margin: -16px 0 50px 0;">
+                    <div class="col-md-3">
+                        © 2018 <span>codeBuddy</span>. Todos os direitos reservados.
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="https://www.codebuddy.com.br/wp-content/themes/buddys/assets/images/logo-footer.png">
+                    </div>
+                    <div class="social col-md-3">
+                        <p>acompanhe a <span>codeBuddy</span>:</p>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/codeBuddy/" class="fab fa-facebook-f" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/codebuddy_br/" class="fab fa-instagram" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCm_LicQdfbtoQAKuOnmtlDw" class="fab fa-youtube" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row assinatura" style="margin: 0px">
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
